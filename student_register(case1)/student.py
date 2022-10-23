@@ -1,4 +1,4 @@
-student_list = open("student_list.txt","r+")
+student_list = open("student_list.txt","a+")
 student_listt = student_list.readlines()
 def student_add():
     name=input("type student's name:")
