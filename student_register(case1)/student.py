@@ -39,7 +39,8 @@ while True :
     elif command=="delete":
         student_delete()
     elif command=="stop":
-        break
         print("Program has been stopped")
+        break
+        
     else:
         print("You tried to execute an undefined process")
