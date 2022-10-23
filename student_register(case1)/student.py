@@ -25,7 +25,7 @@ def student_delete():
       print("Student is deleted")
       student_listt.remove(student)
     student_backup = student_listt
-    with open("student_list.txt", "w+", encoding="utf-8") as file:
+    with open("student_list.txt", "w", encoding="utf-8") as file:
       file.close
     with open("student_list.txt", "w+", encoding="utf-8") as file:
       file.writelines(student_backup)
@@ -41,6 +41,6 @@ while True :
     elif command=="stop":
         print("Program has been stopped")
         break
-        
+
     else:
         print("You tried to execute an undefined process")
